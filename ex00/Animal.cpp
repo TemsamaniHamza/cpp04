@@ -1,6 +1,6 @@
 #include "Animal.hpp"
 
-Animal::Animal() : type("Defautl")
+Animal::Animal() : type("Default")
 {
     std::cout << "Default [Animal] is constructed\n";
 }

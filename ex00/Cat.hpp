@@ -6,8 +6,7 @@
 #include "Animal.hpp"
 
 class Cat : public Animal {
-    protected :
-        std::string type;
+
     public :
         Cat();
         Cat(std::string type);
