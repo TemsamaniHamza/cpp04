@@ -2,7 +2,7 @@ CXX = c++
 
 CFLAGS = -Wall -Wextra -Werror  -std=c++98
 
-SRC = main.cpp Cat.cpp Dog.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp
+SRC = main.cpp Cat.cpp Dog.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 OBJ = $(SRC:.cpp=.o)
 
 NAME = Myprogram 

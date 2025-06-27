@@ -31,16 +31,21 @@ void Brain::setBrain(int i, const std::string& idea) {
     }
 }
 
-// Brain &Brain::operator=(const Brain &obj) {
-//     std::cout << "copy Brain opertaor is called\n";
-//     this->type = obj.type;
-//     return *this;
-// }
+Brain::Brain(const Brain& other) {
+    std::cout << "copy Brain constructor is called\n";
+    for (int i = 0; i < 100; ++i)
+        this->ideas[i] = other.ideas[i];
+}
 
-// Brain::Brain(const Brain &cpy) {
-//     std::cout << "copy Brain operator is called\n";
-//     *this = cpy;
-// }
+Brain& Brain::operator=(const Brain& other) {
+    std::cout << "copy Brain operator is called\n";
+    if (this != &other) {
+        for (int i = 0; i < 100; ++i)
+            this->ideas[i] = other.ideas[i];
+    }
+    return *this;
+}
+
 
 // void Brain::makeSound() const
 // {
