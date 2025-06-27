@@ -10,7 +10,7 @@ class Brain {
         Brain();
         Brain(std::string type);
         ~Brain();
-        const std::string& getBrain (int i) const;
+        const std::string getBrain (int i) const;
         void setBrain(int i, const std::string& idea);
         Brain& operator=(const Brain& obj);
         Brain(const Brain&cpy);

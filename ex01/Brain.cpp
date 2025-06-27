@@ -17,11 +17,11 @@ Brain::~Brain() {
     std::cout << " [Brain] is destructed\n";
 }
 
-const std::string& Brain::getBrain(int i) const
+const std::string Brain::getBrain(int i) const
 {
-    if(this->ideas[i].empty())
-        return ("");
-    return (this->ideas[i]);
+    if (i<100)
+        return (this->ideas[i]);
+    return ("indes is invalid");
 }
 
 
