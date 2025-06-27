@@ -2,7 +2,7 @@
 
 Dog::Dog() : Animal("Dog")
 {
-    std::cout << "Default [Dog] is constructed\n";
+    std::cout << "[Dog] default constructer called\n";
 }
 
 Dog::Dog(std::string type) : Animal(type) {

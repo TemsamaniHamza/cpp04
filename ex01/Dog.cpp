@@ -3,7 +3,7 @@
 Dog::Dog() : Animal("Dog")
 {
     this->brain = new Brain();
-    std::cout << "Defa~ult [Dog] is constructed\n";
+    std::cout << "[Dog] default constructer called\n";
 }
 
 Dog::Dog(std::string type) : Animal(type) 

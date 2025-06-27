@@ -2,11 +2,11 @@
 
 Animal::Animal() : type("Defautl")
 {
-    std::cout << "Default [Animal] is constructed\n";
+    std::cout << "[Animal] default constructer called\n";
 }
 
 Animal::Animal(std::string type) : type(type) {
-    std::cout << type << " [Animal] is constructed\n";
+    std::cout <<"[Animal] is constructed with type= " << type << std::endl;
 }
 
 Animal::~Animal() {

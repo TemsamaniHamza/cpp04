@@ -2,7 +2,7 @@
 
 Cat::Cat() : Animal("Cat")
 {
-    std::cout << "Default [Cat] is constructed\n";
+    std::cout << "[Cat] default constructer called\n";
 }
 
 Cat::Cat(std::string type) : Animal(type) {
